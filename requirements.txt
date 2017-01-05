@@ -1,0 +1,7 @@
+Django
+dj-database-url
+dj-static
+django-toolbelt
+psycopg2
+static3
+waitress
