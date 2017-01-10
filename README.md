@@ -2,19 +2,20 @@
 A project template for a Python/Django project ready to deploy into the Heroku production environment.
 
 # How to use this template
-Create a new folder and virtual environment namded DAD.
+Create a new folder and virtual environment named DAD.
 ```
 mkdir IT384
 cd IT384
 virtualenv DAD
 ```
-Start your DAD virtual environment.
+
+## Start your DAD virtual environment.
 ```
 cd DAD
 source bin/activate
 ```
 
-Test to see if it is working properly
+## Test to see if it is working properly
 ```
 pip –V
 ```
@@ -23,11 +24,12 @@ You should see
 pip 1.5.6 from /home/cdt/<xnumber>/it394/DAD/lib/python2.7/site-packages (python 2.7)
 ```
 
-Install Django – This takes a couple of minutes
+##Install Django – This takes a couple of minutes
 ```
 pip install django
 ```
 
+#Start a new project in Django
 
 To use this template start a new project using django-admin and the --template parameter
 ```
@@ -36,7 +38,7 @@ django-admin startproject --template=https://github.com/usma-eecs/IT394_template
 
 You should use an all lower case name (with no special characters) for your project name.
 
-# Update Select Files
+## Update Select Files
 
 django-admin startproject will correctly rename the project_name folder and also replace the {{ }} patterns with the correct values for the contents of the files in the project_name folder.
 
@@ -57,13 +59,13 @@ cd nifty
 grep –rnw ./ -e “{{ project_name }}”
 ```
 
-# Install packages required by Heroku
+## Install packages required by Heroku
 Install the packages from requirements.txt (you probably already have these installed in your DAD environment):
 ```
 pip install -r requirements.txt
 ```
 
-# Local data management commands
+## Local data management commands
 
 Set the DATABASE_URL environment variable. Then create the initial database structure and create the initial security principal with:
 ```
@@ -112,7 +114,7 @@ heroku logs
 heroku ps
 ```
 
-# Remote data management commands
+## Remote data management commands
 We are separated from Heroku by a firewall that blocks interactive access to Heroku one-off dynos (See: https://devcenter.heroku.com/articles/one-off-dynos).  Because of this you'll need to interact with Heroku using the run:detached option.
 
 
