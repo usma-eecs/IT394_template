@@ -95,11 +95,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/{{ docs_version }}/howto/static-files/
 # dj-static configuration
 # See: https://github.com/kennethreitz/dj-static
-STATIC_ROOT = 'staticfiles'
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(PROJECT_ROOT, 'static'),
 )
 
 # Output Django logs to Heroku logplex

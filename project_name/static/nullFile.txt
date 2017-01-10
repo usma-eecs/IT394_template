@@ -1,0 +1,1 @@
+This is required for github, there cannot be an empty directory. The file is only necessary to enable the static folder to exist. This is necessary in order to properly compile on Heroku.
