@@ -1,7 +1,7 @@
 # it394_template
 A project template for a Python/Django project ready to deploy into the Heroku production environment.
 
-# How to use this template
+#Start a new project in Django
 Create a new folder and virtual environment named DAD.
 ```
 mkdir IT384
@@ -29,7 +29,7 @@ pip 1.5.6 from /home/cdt/<xnumber>/it394/DAD/lib/python2.7/site-packages (python
 pip install django
 ```
 
-#Start a new project in Django
+## Use Django to create named Project
 
 To use this template start a new project using django-admin and the --template parameter
 ```
