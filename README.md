@@ -67,7 +67,7 @@ pip install -r requirements.txt
 
 ## Local data management commands
 
-Set the DATABASE_URL environment variable. Then create the initial database structure and create the initial security principal with:
+Create the initial database structure and create the initial security principal with:
 ```
 python manage.py migrate
 ```
